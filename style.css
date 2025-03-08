@@ -10,6 +10,7 @@ body {
     align-items: center;
     height: 100vh;
     flex-direction: column;
+    overflow: hidden; /* Sayfanın taşmasını engelle */
 }
 
 /* Ana container */
@@ -23,9 +24,9 @@ body {
 
 /* Başlık stili */
 h1 {
-    font-size: 2em;
+    font-size: 3em;
     margin-bottom: 20px;
-    color: #fff;
+    color: red; /* Kırmızı renk */
     animation: fadeIn 1s ease-out;
 }
 
@@ -38,9 +39,9 @@ h1 {
 
 /* Arama kutusu */
 .search-box {
-    width: 60%;
-    padding: 15px;
-    font-size: 1.2em;
+    width: 80%; /* Kutuyu büyüttük */
+    padding: 20px;
+    font-size: 1.5em;
     border-radius: 25px;
     border: none;
     margin-bottom: 20px;
@@ -48,6 +49,7 @@ h1 {
     transition: all 0.3s ease-in-out;
 }
 
+/* Arama kutusu odaklandığında */
 .search-box:focus {
     transform: scale(1.05);
     border: 2px solid #007bff;
@@ -55,9 +57,9 @@ h1 {
 
 /* Arama butonunun stili */
 .search-btn {
-    padding: 15px 30px;
-    font-size: 1.2em;
-    background-color: #007bff; /* Mavi arka plan */
+    padding: 20px 40px;
+    font-size: 1.5em;
+    background-color: red; /* Kırmızı arka plan */
     border: none;
     border-radius: 25px;
     color: white;
@@ -67,7 +69,7 @@ h1 {
 
 /* Arama butonunun hover efekti */
 .search-btn:hover {
-    background-color: #0056b3;
+    background-color: #ff4040; /* Buton hover'da biraz daha açık kırmızı */
     transform: scale(1.05);
 }
 
