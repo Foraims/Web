@@ -1,0 +1,84 @@
+/* Genel vücut stili */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1a1a1a; /* Siyah arka plan */
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+/* Ana container */
+.container {
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #333; /* Koyu gri arka plan */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+}
+
+/* Başlık stili */
+h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #fff;
+    animation: fadeIn 1s ease-out;
+}
+
+/* Arama kutusunun stilini ayarlama */
+.search-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Arama kutusu */
+.search-box {
+    width: 60%;
+    padding: 15px;
+    font-size: 1.2em;
+    border-radius: 25px;
+    border: none;
+    margin-bottom: 20px;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.search-box:focus {
+    transform: scale(1.05);
+    border: 2px solid #007bff;
+}
+
+/* Arama butonunun stili */
+.search-btn {
+    padding: 15px 30px;
+    font-size: 1.2em;
+    background-color: #007bff; /* Mavi arka plan */
+    border: none;
+    border-radius: 25px;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Arama butonunun hover efekti */
+.search-btn:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+/* FadeIn animasyonu */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
